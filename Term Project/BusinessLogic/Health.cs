@@ -8,5 +8,6 @@ namespace Term_Project.BusinessLogic
 {
     internal class Health
     {
+
     }
 }
