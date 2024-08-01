@@ -3,13 +3,13 @@
     x:Class="Term_Project.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Term_Project"
+    xmlns:local="clr-namespace:Term_Project.Pages"
     Shell.FlyoutBehavior="Disabled"
     Title="Term_Project">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:AddUserPage}"
+        Route="AddUserPage"/>
 
 </Shell>
