@@ -3,10 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Term_Project.Pages.UserLoginPage"
              Title="UserLoginPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+        <Image 
+            Source="user_icon.png"
+            WidthRequest="300"
+            HeightRequest="300"
+            Margin="0,0,15,15"/>
+        <Label
+            Text="Username: "
+            FontAttributes="Bold"/>
+        <Entry 
+            x:Name="userNameEntry"
+            Margin="0,0,0,15"/>
+        <Label
+            Text="Password:"
+            FontAttributes="Bold"/>
+        <Entry
+            x:Name="passwordEntry"/>
+
+        <HorizontalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            <Button
+                Text="Login"
+                WidthRequest="110"
+                HeightRequest="50"
+                Margin="15, 15, 5, 15"
+                CornerRadius="15"
+                Clicked="LoginBtnClicked"
+                BackgroundColor="#4765bf"/> 
+            <Button
+                Text="New User"
+                WidthRequest="110"
+                HeightRequest="50"
+                Margin="5, 15, 15, 15"
+                CornerRadius="15"
+                Clicked="NewUserBtnClicked"
+                BackgroundColor="#e38a46"/>
+        </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
+    
+  

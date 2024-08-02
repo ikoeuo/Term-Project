@@ -6,4 +6,14 @@ public partial class UserLoginPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	public void LoginBtnClicked(object sender, EventArgs e)
+	{
+		Navigation.PushAsync(new MainMenuPage());
+	}
+
+	public void NewUserBtnClicked(object sender, EventArgs e)
+	{
+		Navigation.PushAsync(new AddUserPage());
+	}
 }

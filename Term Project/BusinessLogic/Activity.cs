@@ -8,6 +8,7 @@ namespace Term_Project.BusinessLogic
 {
     public class Activity
     {
+ 
         private DateTime _dateTime;
         private string _activityType;
         private int _duration;
