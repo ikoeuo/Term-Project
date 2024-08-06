@@ -35,7 +35,7 @@
                 Text="Weight(lb): "
                 FontAttributes="Bold"/>
             <Entry 
-                x:Name="weigthEntry"
+                x:Name="weightEntry"
                 Margin="0,0,0,15"/>
             <Label
                 Text="Height(ft): "
@@ -53,13 +53,13 @@
                 Text="username"
                 FontAttributes="Bold"/>
             <Entry
-                x:Name="userNameEntry"
+                x:Name="usernameEntry"
                 Margin="0,0,0,15"/>
             <Label
                 Text="Password:"
                 FontAttributes="Bold"/>
             <Entry
-                x:Name="newPasswordEntry"
+                x:Name="passwordEntry"
                 Margin="0,0,0,15"/>
 
 
