@@ -5,6 +5,7 @@ namespace Term_Project.Pages;
 
 public partial class AddUserPage : ContentPage
 {
+	public User? user;
 	public AddUserPage()
 	{
 		InitializeComponent();
@@ -25,10 +26,9 @@ public partial class AddUserPage : ContentPage
 
 		}
 	}
-
 	public void BackBtnClicked(object sender, EventArgs e)
 	{
-		Navigation.PushAsync(new UserLoginPage());
+        Navigation.PopAsync();;
 	}
 
 	public void AddUserBtnClicked(object sender, EventArgs e)
@@ -48,7 +48,6 @@ public partial class AddUserPage : ContentPage
 		else {
 			var newUser = new User
 			{
-
 				Name = nameEntry.Text,
 				Age = int.Parse(ageEntry.Text),
 				Gender = genderEntry.SelectedItem.ToString(),
@@ -59,6 +58,7 @@ public partial class AddUserPage : ContentPage
 				Password = passwordEntry.Text
 			};
 			App.Users.Add(newUser);
+			App.loggedInUser = newUser;
 			Navigation.PushAsync(new MainMenuPage());
 
 		}

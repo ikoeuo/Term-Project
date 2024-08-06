@@ -16,7 +16,7 @@
                 Text="Username: "
                 FontAttributes="Bold"/>
             <Entry 
-                x:Name="userNameEntry"
+                x:Name="usernameEntry"
                 Margin="0,0,0,15"/>
             <Label
                 Text="Password:"
