@@ -2,13 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Term_Project.Pages.UserLoginPage"
+             NavigationPage.HasBackButton="False"
              Title="UserLoginPage">
     <ScrollView>
         <VerticalStackLayout
             HorizontalOptions="Center"
             VerticalOptions="Center">
             <Image 
-                Source="user_icon.png"
+                Source="app_logo.png"
                 WidthRequest="300"
                 HeightRequest="300"
                 Margin="0,0,15,15"/>
@@ -34,7 +35,7 @@
                     Margin="15, 15, 5, 15"
                     CornerRadius="15"
                     Clicked="LoginBtnClicked"
-                    BackgroundColor="#4765bf"/>
+                    BackgroundColor="#46afcf"/>
                 <Button
                     Text="New User"
                     WidthRequest="110"
@@ -42,7 +43,7 @@
                     Margin="5, 15, 15, 15"
                     CornerRadius="15"
                     Clicked="NewUserBtnClicked"
-                    BackgroundColor="#e38a46"/>
+                    BackgroundColor="#ff8b36"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>

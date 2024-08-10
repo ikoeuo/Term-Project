@@ -14,7 +14,6 @@ public partial class ViewUserPage : ContentPage
         weightLabel.Text = $"Weight: {user.Weight}lb";
         heightLabel.Text = $"Height: {user.Height}cm";
         fitnessGoalLabel.Text  = $"Fitness Goal: {user.FitnessGoal}";
-
     }
 
     public void BackBtnClicked(object sender, EventArgs e)

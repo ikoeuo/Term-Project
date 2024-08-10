@@ -5,11 +5,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Term_Project.Pages"
     Shell.FlyoutBehavior="Disabled"
-    Title="Term_Project">
+    Shell.NavBarIsVisible="False"
+    Title="HN Trackwell">
 
     <ShellContent
-        Title="Home"
         ContentTemplate="{DataTemplate local:UserLoginPage}"
-        Route="UserLoginPage"/>
+        Route="UserLoginPage"
+        />
 
 </Shell>

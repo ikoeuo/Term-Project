@@ -64,7 +64,7 @@
                     Margin="15, 15, 5, 15"
                     CornerRadius="15"
                     Clicked="BackBtnClicked"
-                    BackgroundColor="#ad3d32"/>
+                    BackgroundColor="#db4536"/>
                 <Button
                      Text="Logout"
                      WidthRequest="110"

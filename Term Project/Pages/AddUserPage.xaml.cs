@@ -5,26 +5,13 @@ namespace Term_Project.Pages;
 
 public partial class AddUserPage : ContentPage
 {
-	public User? user;
+	public User user;
+	public List<string> GenderList {  get; set; }
 	public AddUserPage()
 	{
 		InitializeComponent();
-		BindingContext = new AddUserPageViewModel();
-
-	}
-
-	public class AddUserPageViewModel
-	{
-		public ObservableCollection<string> GenderList { get; set; }
-
-		public AddUserPageViewModel()
-		{
-			GenderList = new ObservableCollection<string>
-			{
-				"Male", "Female", "Non-binary", "Prefer not to say"
-			};
-
-		}
+		GenderList = new List<string> { "Male", "Female", "Non-Binary", "Prefer not to say" };
+		BindingContext = this;
 	}
 	public void BackBtnClicked(object sender, EventArgs e)
 	{
@@ -40,6 +27,7 @@ public partial class AddUserPage : ContentPage
 			string.IsNullOrWhiteSpace(passwordEntry.Text) )
 		{
 			DisplayAlert("Field Empty", "Please fill in all user information", "OK");
+			return;
 		}
 		if (!int.TryParse(ageEntry.Text, out _) || !float.TryParse(weightEntry.Text, out _) || !float.TryParse(heightEntry.Text, out _) )
 		{
@@ -57,7 +45,7 @@ public partial class AddUserPage : ContentPage
 				Username = usernameEntry.Text,
 				Password = passwordEntry.Text
 			};
-			App.Users.Add(newUser);
+			App.UsersList.Add(newUser);
 			App.loggedInUser = newUser;
 			Navigation.PushAsync(new MainMenuPage());
 

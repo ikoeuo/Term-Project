@@ -72,7 +72,7 @@
                     Margin="15, 15, 5, 15"
                     CornerRadius="15"
                     Clicked="BackBtnClicked"
-                    BackgroundColor="#ad3d32"/> <!--goes back to login page-->
+                    BackgroundColor="#db4536"/> <!--goes back to login page-->
                 <Button
                     Text="Add User"
                     WidthRequest="110"
@@ -80,7 +80,7 @@
                     Margin="5, 15, 15, 15"
                     CornerRadius="15"
                     Clicked="AddUserBtnClicked"
-                    BackgroundColor="#1a915e"/> <!--goes to MainMenuPage-->
+                    BackgroundColor="#2c9256"/> <!--goes to MainMenuPage-->
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>

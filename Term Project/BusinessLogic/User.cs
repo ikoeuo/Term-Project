@@ -8,8 +8,9 @@ namespace Term_Project.BusinessLogic
 {
     public class User
     {
-        /*
-        public User(string name, int age, string gender, float weigth, float height, string fitnessGoal, string username, string password)
+        public User() { }
+        
+        public User(string name, int age, string gender, float weigth, float height, string fitnessGoal, string username, string password, string userActivity, string userHealth)
         {
             Name = name;
             Age = age;
@@ -20,16 +21,14 @@ namespace Term_Project.BusinessLogic
             Username = username;
             Password = password;
         }
-        */
 
-        public string? Name {  get; set; }
-        public int? Age { get; set; }
-        public string? Gender {  get; set; }
-        public float? Weight { get; set; }
-        public float? Height {  get; set; }
-        public string? FitnessGoal {  get; set; }
-        public string? Username {  get; set; }
-        public string? Password {  get; set; }
-
+        public string Name {  get; set; }
+        public int Age { get; set; }
+        public string Gender {  get; set; }
+        public float Weight { get; set; }
+        public float Height {  get; set; }
+        public string FitnessGoal {  get; set; }
+        public string Username {  get; set; }
+        public string Password {  get; set; }
     }
 }
