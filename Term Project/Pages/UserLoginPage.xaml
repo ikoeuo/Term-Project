@@ -10,8 +10,8 @@
             VerticalOptions="Center">
             <Image 
                 Source="app_logo.png"
-                WidthRequest="300"
-                HeightRequest="300"
+                WidthRequest="350"
+                HeightRequest="350"
                 Margin="0,0,15,15"/>
             <Label
                 Text="Username: "
@@ -30,20 +30,22 @@
                 HorizontalOptions="Center">
                 <Button
                     Text="Login"
+                    FontFamily="SFBold"
                     WidthRequest="110"
                     HeightRequest="50"
                     Margin="15, 15, 5, 15"
                     CornerRadius="15"
                     Clicked="LoginBtnClicked"
-                    BackgroundColor="#46afcf"/>
+                    BackgroundColor="#0e7695"/>
                 <Button
                     Text="New User"
+                    FontFamily="SFBold"
                     WidthRequest="110"
                     HeightRequest="50"
                     Margin="5, 15, 15, 15"
                     CornerRadius="15"
                     Clicked="NewUserBtnClicked"
-                    BackgroundColor="#ff8b36"/>
+                    BackgroundColor="#e78651"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>

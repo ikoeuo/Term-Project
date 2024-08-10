@@ -67,14 +67,16 @@
             HorizontalOptions="Center">
                 <Button
                     Text="Back"
+                    FontFamily="SFBold"
                     WidthRequest="110"
                     HeightRequest="50"
                     Margin="15, 15, 5, 15"
                     CornerRadius="15"
                     Clicked="BackBtnClicked"
-                    BackgroundColor="#db4536"/> <!--goes back to login page-->
+                    BackgroundColor="#e75151"/> <!--goes back to login page-->
                 <Button
                     Text="Add User"
+                    FontFamily="SFBold"
                     WidthRequest="110"
                     HeightRequest="50"
                     Margin="5, 15, 15, 15"

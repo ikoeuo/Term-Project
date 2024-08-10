@@ -13,6 +13,8 @@ namespace Term_Project
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("SFProDisplay-Bold.ttf", "SFBold");
+                    fonts.AddFont("SFProText-Regular.ttf", "SFRegular");
                 });
 
 #if DEBUG

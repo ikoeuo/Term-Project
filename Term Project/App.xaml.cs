@@ -13,7 +13,7 @@ namespace Term_Project
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new UserLoginPage()); ;
+            MainPage = new NavigationPage(new UserLoginPage());
         }
     }
 }
