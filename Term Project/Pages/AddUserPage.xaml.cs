@@ -24,7 +24,10 @@ public partial class AddUserPage : ContentPage
 
 	public void AddUserBtnClicked(object sender, EventArgs e)
 	{
-		if ( string.IsNullOrWhiteSpace(nameEntry.Text) || 
+        var usernameEntered = usernameEntry.Text;
+        var userEntered = App.UsersList.Find(user => user.Username == usernameEntered);
+
+        if ( string.IsNullOrWhiteSpace(nameEntry.Text) || 
 			genderEntry.SelectedItem == null || 
 		    fitnessGoalEntry.SelectedItem == null || 
 			string.IsNullOrWhiteSpace(usernameEntry.Text) || 
@@ -36,6 +39,11 @@ public partial class AddUserPage : ContentPage
 		if (!int.TryParse(ageEntry.Text, out _) || !float.TryParse(weightEntry.Text, out _) || !float.TryParse(heightEntry.Text, out _) )
 		{
 			DisplayAlert("Inavalid Selection", "Please enter valid numbers for Age/Weight/Height", "OK");
+			return;
+		}
+        if (userEntered != null)
+		{
+			DisplayAlert("Username Taken", $"Username '{usernameEntered}' is already taken", "OK");
 		}
 		else {
 			var newUser = new User
