@@ -8,10 +8,12 @@ public partial class AddUserPage : ContentPage
 {
 	public User user;
 	public List<string> GenderList {  get; set; }
+	public List<string> FitnessGoalList { get; set; }
 	public AddUserPage()
 	{
 		InitializeComponent();
 		GenderList = new List<string> { "Male", "Female", "Non-Binary", "Prefer not to say" };
+		FitnessGoalList = new List<string> { "Get more steps in","Exercise more","Try new exercises","Be more fit","Gain muscle", "Other"};
 		BindingContext = this;
 	}
 	public void BackBtnClicked(object sender, EventArgs e)
@@ -23,7 +25,7 @@ public partial class AddUserPage : ContentPage
 	{
 		if ( string.IsNullOrWhiteSpace(nameEntry.Text) || 
 			genderEntry.SelectedItem == null || 
-		    string.IsNullOrWhiteSpace(fitnessGoalEntry.Text) || 
+		    fitnessGoalEntry.SelectedItem == null || 
 			string.IsNullOrWhiteSpace(usernameEntry.Text) || 
 			string.IsNullOrWhiteSpace(passwordEntry.Text) )
 		{
@@ -42,7 +44,7 @@ public partial class AddUserPage : ContentPage
 				Gender = genderEntry.SelectedItem.ToString(),
 				Weight = float.Parse(weightEntry.Text),
 				Height = float.Parse(heightEntry.Text),
-				FitnessGoal = fitnessGoalEntry.Text,
+				FitnessGoal = fitnessGoalEntry.SelectedItem.ToString(),
 				Username = usernameEntry.Text,
 				Password = passwordEntry.Text
 			};
