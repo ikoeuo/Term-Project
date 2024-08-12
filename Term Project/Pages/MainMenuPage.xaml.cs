@@ -2,6 +2,8 @@ using Term_Project.BusinessLogic;
 
 namespace Term_Project.Pages;
 
+//Author: Nikole Phipps Santos
+
 public partial class MainMenuPage : ContentPage
 {
 	public User loggedInUser;
@@ -42,6 +44,6 @@ public partial class MainMenuPage : ContentPage
     private void achivementsBtnClicked(object sender, EventArgs e)
     {
         var loggedInUser = App.loggedInUser;
-        Navigation.PushAsync(new AchivementsPage(loggedInUser));
+        Navigation.PushAsync(new AchievementsPage(loggedInUser));
     }
 }

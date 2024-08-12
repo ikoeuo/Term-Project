@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Term_Project.Pages.ViewUserPage"
              Title="ViewUserPage">
+    <!-- Author: Nikole Phipps Santos -->
     <ScrollView>
         <Border StrokeShape="RoundRectangle 40,40,40,40" Stroke="Transparent" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="810" WidthRequest="600">
             <VerticalStackLayout

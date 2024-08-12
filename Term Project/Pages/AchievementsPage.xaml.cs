@@ -2,9 +2,10 @@ using Term_Project.BusinessLogic;
 
 namespace Term_Project.Pages;
 
-public partial class AchivementsPage : ContentPage
+// Author: Hira Ahmad
+public partial class AchievementsPage : ContentPage
 {
-	public AchivementsPage(User user)
+	public AchievementsPage(User user)
 	{
 		InitializeComponent();
         List<Achievement> achievements = GetAchievements();

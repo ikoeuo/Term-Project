@@ -4,6 +4,7 @@
              x:Class="Term_Project.Pages.UserLoginPage"
              NavigationPage.HasBackButton="False"
              Title="UserLoginPage">
+    <!-- Author: Nikole Phipps Santos -->
     <ScrollView>
         <VerticalStackLayout
             HorizontalOptions="Center"

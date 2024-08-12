@@ -1,6 +1,7 @@
 using Term_Project.BusinessLogic;
 
 namespace Term_Project.Pages;
+///Author: Hira Ahmad
 
 public partial class ViewActivityPage : ContentPage
 {

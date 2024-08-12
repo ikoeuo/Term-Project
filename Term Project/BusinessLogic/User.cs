@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Term_Project.BusinessLogic
+//Author: Nikole Phipps Santos
+
 {
     public class User
     {

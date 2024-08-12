@@ -2,6 +2,7 @@
 using Term_Project.Pages;
 
 namespace Term_Project
+// Author: Nikole Phipps Santos
 {
     public partial class App : Application
     {
@@ -13,9 +14,6 @@ namespace Term_Project
         public App()
         {
             InitializeComponent();
-
-            UsersList.Add(new User("a",1,"m",1,1,"","a","a","",""));
-
             MainPage = new NavigationPage(new UserLoginPage());
         }
     }

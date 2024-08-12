@@ -1,6 +1,8 @@
 using Term_Project.BusinessLogic;
 
 namespace Term_Project.Pages;
+// Author: Nikole Phipps Santos 
+
 
 public partial class UserLoginPage : ContentPage
 {
