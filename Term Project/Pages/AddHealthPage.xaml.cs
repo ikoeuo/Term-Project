@@ -32,7 +32,6 @@ public partial class AddHealthPage : ContentPage
             var newHealth = new Health(healthDatePicker.Date, int.Parse(caloriesEntry.Text), double.Parse(sleepEntry.Text), double.Parse(waterIntakeEntry.Text));
             App.UserHealthList.Add(newHealth);
             Navigation.PushAsync(new MainMenuPage());
-
         }
     }
 }

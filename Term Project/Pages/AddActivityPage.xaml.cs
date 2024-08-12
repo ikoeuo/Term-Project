@@ -26,7 +26,7 @@ public partial class AddActivityPage : ContentPage
         }
         if (!int.TryParse(durationEntry.Text, out _) || !float.TryParse(distanceEntry.Text, out _) || !int.TryParse(stepsEntry.Text, out _))
         {
-            DisplayAlert("Inavalid Selection", "Please enter valid numbers for Calories/Sleep/Water Intake", "OK");
+            DisplayAlert("Invalid Selection", "Please enter valid numbers for Calories/Sleep/Water Intake", "OK");
         }
         else
         {

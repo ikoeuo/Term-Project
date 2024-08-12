@@ -16,13 +16,6 @@ namespace Term_Project
 
             UsersList.Add(new User("a",1,"m",1,1,"","a","a","",""));
 
-            Achievement steps = new Achievement("10k Steps", "Completed 10,000 steps", "user_icon.png", false);
-            Achievement water = new Achievement("2L Water", "Drank 2 Litres of water", "user_icon.png", false);
-            Achievement sleep = new Achievement("8H Sleep", "Slept for 8 hours", "user_icon.png", false);
-            AchievementList.Add(steps);
-            AchievementList.Add(water);
-            AchievementList.Add(sleep);
-
             MainPage = new NavigationPage(new UserLoginPage());
         }
     }
