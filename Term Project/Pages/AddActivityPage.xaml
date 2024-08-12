@@ -19,7 +19,7 @@ VerticalOptions="Center">
             x:Name="activityDatePicker"
             />
         <Label
-        Text="Acitivity Type: "
+        Text="Activity Type: "
         FontAttributes="Bold"/>
         <Entry
         x:Name="activityTypeEntry"
