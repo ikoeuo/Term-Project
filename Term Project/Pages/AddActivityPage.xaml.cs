@@ -6,9 +6,13 @@ namespace Term_Project.Pages;
 
 public partial class AddActivityPage : ContentPage
 {
+    User user;
+
     public AddActivityPage(User user)
     {
         InitializeComponent();
+
+        this.user = user;
     }
 
     private void BackBtnClicked(object sender, EventArgs e)
@@ -33,7 +37,7 @@ public partial class AddActivityPage : ContentPage
         else
         {
             var newActivity = new Activity(activityDatePicker.Date, activityTypeEntry.Text, int.Parse(durationEntry.Text), float.Parse(distanceEntry.Text), int.Parse(stepsEntry.Text));
-            App.UserActivityList.Add(newActivity);
+            this.user.Activities.Add(newActivity);
             Navigation.PushAsync(new MainMenuPage());
 
         }

@@ -6,9 +6,13 @@ namespace Term_Project.Pages;
 
 public partial class AddHealthPage : ContentPage
 {
+    User user;
+
 	public AddHealthPage(User user)
 	{
 		InitializeComponent();
+
+        this.user = user;
 	}
 
     private void BackBtnClicked(object sender, EventArgs e)
@@ -32,7 +36,7 @@ public partial class AddHealthPage : ContentPage
         else
         {
             var newHealth = new Health(healthDatePicker.Date, int.Parse(caloriesEntry.Text), double.Parse(sleepEntry.Text), double.Parse(waterIntakeEntry.Text));
-            App.UserHealthList.Add(newHealth);
+            this.user.Health.Add(newHealth);
             Navigation.PushAsync(new MainMenuPage());
         }
     }

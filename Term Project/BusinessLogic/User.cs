@@ -10,7 +10,11 @@ namespace Term_Project.BusinessLogic
 {
     public class User
     {
-        public User() { }
+        public User() 
+        {
+            Activities = new List<Activity>();
+            Health = new List<Health>();
+        }
         
         public User(string name, int age, string gender, float weigth, float height, string fitnessGoal, string username, string password, string userActivity, string userHealth)
         {
@@ -22,6 +26,8 @@ namespace Term_Project.BusinessLogic
             FitnessGoal = fitnessGoal;
             Username = username;
             Password = password;
+            Activities = new List<Activity>();
+            Health = new List<Health>();
         }
 
         public string Name {  get; set; }
@@ -32,5 +38,9 @@ namespace Term_Project.BusinessLogic
         public string FitnessGoal {  get; set; }
         public string Username {  get; set; }
         public string Password {  get; set; }
+
+        public List<Activity> Activities { get; set; }
+
+        public List<Health> Health { get; set; }
     }
 }

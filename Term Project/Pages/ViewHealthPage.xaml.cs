@@ -8,7 +8,7 @@ public partial class ViewHealthPage : ContentPage
 	public ViewHealthPage(User user)
 	{
 		InitializeComponent();
-        HealthListView.ItemsSource = App.UserHealthList;
+        HealthListView.ItemsSource = user.Health;
     }
 
     private void BackBtnClicked(object sender, EventArgs e)

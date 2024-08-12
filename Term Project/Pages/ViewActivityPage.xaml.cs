@@ -8,7 +8,7 @@ public partial class ViewActivityPage : ContentPage
 	public ViewActivityPage(User user)
 	{
 		InitializeComponent();
-        ActivityListView.ItemsSource = App.UserActivityList;
+        ActivityListView.ItemsSource = user.Activities;
     }
 
     private void BackBtnClicked(object sender, EventArgs e)

@@ -8,20 +8,20 @@ public partial class AchievementsPage : ContentPage
 	public AchievementsPage(User user)
 	{
 		InitializeComponent();
-        List<Achievement> achievements = GetAchievements();
+        List<Achievement> achievements = GetAchievements(user);
         AchievementsListView.ItemsSource = achievements;
     }
 
-    private List<Achievement> GetAchievements()
+    private List<Achievement> GetAchievements(User user)
     {
         var achievements = new List<Achievement>();
         Achievement stepsAchievement = new Achievement("10k Steps", "Completed 10,000 steps", "user_icon.png", false);
         Achievement waterAchievement = new Achievement("2L Water", "Drank 2 Litres of water", "user_icon.png", false);
         Achievement sleepAchievement = new Achievement("8H Sleep", "Slept for 8 hours", "user_icon.png", false);
 
-        int totalSteps = getTotalSteps();
-        double toatlWaterIntake = getTotalWaterIntakeForToday();
-        double totalSleep = getTotalSleepForToday();
+        int totalSteps = getTotalSteps(user);
+        double toatlWaterIntake = getTotalWaterIntakeForToday(user);
+        double totalSleep = getTotalSleepForToday(user);
 
         if (totalSteps >= 10000)
         {
@@ -47,10 +47,10 @@ public partial class AchievementsPage : ContentPage
         return achievements;
     }
 
-    private int getTotalSteps()
+    private int getTotalSteps(User user)
     {
         int totalSteps = 0;
-        foreach (Activity activity in App.UserActivityList)
+        foreach (Activity activity in user.Activities)
         {
             totalSteps = totalSteps + activity.Steps;
         }
@@ -58,9 +58,9 @@ public partial class AchievementsPage : ContentPage
         return totalSteps;
     }
 
-    private double getTotalWaterIntakeForToday()
+    private double getTotalWaterIntakeForToday(User user)
     {
-        var healthDataForToday = App.UserHealthList.FindAll(health => health.Date == DateTime.Today);
+        var healthDataForToday = user.Health.FindAll(health => health.Date == DateTime.Today);
         double toatlWaterIntake = 0;
         foreach (Health health in healthDataForToday)
         {
@@ -70,11 +70,11 @@ public partial class AchievementsPage : ContentPage
         return toatlWaterIntake;
     }
 
-    private double getTotalSleepForToday()
+    private double getTotalSleepForToday(User user)
     {
-        var healthDataForToday = App.UserHealthList.Find(health => health.Date == DateTime.Today);
+        var healthDataForToday = user.Health.FindAll(health => health.Date == DateTime.Today);
         double totalSleep = 0;
-        foreach (Health health in App.UserHealthList)
+        foreach (Health health in healthDataForToday)
         {
             totalSleep = totalSleep + health.Sleep;
         }
