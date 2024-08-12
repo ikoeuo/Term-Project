@@ -3,10 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Term_Project.Pages.ViewActivityPage"
              Title="ViewActivityPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+    <VerticalStackLayout
+VerticalOptions="Center"
+HorizontalOptions="Center">
+        <Image 
+    Source="user_icon.png"
+    WidthRequest="300"
+    HeightRequest="300"
+    Margin="0,0,15,15"/>
+        <ListView
+            x:Name="ActivityListView"
+            />
+        <Button
+        Text="Back"
+        FontFamily="SFBold"
+        WidthRequest="110"
+        HeightRequest="50"
+        Margin="15, 15, 5, 15"
+        CornerRadius="15"
+        Clicked="BackBtnClicked"
+        BackgroundColor="#e75151"/>
+        <!--goes to MainMenuPag-->
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

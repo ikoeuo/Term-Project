@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Term_Project.Pages.ViewHealthPage"
              Title="ViewHealthPage">
+    <ScrollView>
     <VerticalStackLayout
     VerticalOptions="Center"
     HorizontalOptions="Center">
@@ -25,4 +26,5 @@
             BackgroundColor="#e75151"/>
         <!--goes to MainMenuPag-->
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
