@@ -38,4 +38,10 @@ public partial class MainMenuPage : ContentPage
         var loggedInUser = App.loggedInUser;
         Navigation.PushAsync(new ViewActivityPage(loggedInUser));
     }
+
+    private void achivementsBtnClicked(object sender, EventArgs e)
+    {
+        var loggedInUser = App.loggedInUser;
+        Navigation.PushAsync(new AchivementsPage(loggedInUser));
+    }
 }
