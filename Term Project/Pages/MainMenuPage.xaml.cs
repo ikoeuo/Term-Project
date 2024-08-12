@@ -26,4 +26,10 @@ public partial class MainMenuPage : ContentPage
         var loggedInUser = App.loggedInUser;
         Navigation.PushAsync(new AddHealthPage(loggedInUser));
     }
+
+    private void viewHealthBtnClicked(object sender, EventArgs e)
+    {
+        var loggedInUser = App.loggedInUser;
+        Navigation.PushAsync(new ViewHealthPage(loggedInUser));
+    }
 }
