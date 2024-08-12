@@ -19,7 +19,7 @@ public partial class AchievementsPage : ContentPage
         Achievement waterAchievement = new Achievement("2L Water", "Drank 2 Litres of water", "drop.png", false);
         Achievement sleepAchievement = new Achievement("8H Sleep", "Slept for 8 hours", "sleep.png", false);
 
-        int totalSteps = getTotalSteps(user);
+        int totalSteps = getTotalStepsForToday(user);
         double toatlWaterIntake = getTotalWaterIntakeForToday(user);
         double totalSleep = getTotalSleepForToday(user);
 
@@ -47,10 +47,11 @@ public partial class AchievementsPage : ContentPage
         return achievements;
     }
 
-    private int getTotalSteps(User user)
+    private int getTotalStepsForToday(User user)
     {
+        var activityDataForToday = user.Activities.FindAll(activity => activity.Date == DateTime.Today);
         int totalSteps = 0;
-        foreach (Activity activity in user.Activities)
+        foreach (Activity activity in activityDataForToday)
         {
             totalSteps = totalSteps + activity.Steps;
         }
