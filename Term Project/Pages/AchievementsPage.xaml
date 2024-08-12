@@ -19,14 +19,16 @@ HorizontalOptions="Center">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal" Padding="10">
-                                <Image Source="{Binding Icon}" Aspect="AspectFit" HeightRequest="50" WidthRequest="50"/>
-                                <StackLayout Orientation="Vertical" Padding="10,0">
-                                    <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="Medium"/>
-                                    <Label Text="{Binding Description}" FontSize="Small" TextColor="Gray"/>
+                            <Border StrokeShape="RoundRectangle 35,35,35,35" WidthRequest="700" HeightRequest="100" Stroke="Transparent" Margin="0,0,0,15">
+                                <StackLayout Orientation="Horizontal" Padding="10" BackgroundColor="#0e9594">
+                                    <Image Source="{Binding Icon}" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" Margin="5,0,15,0"/>
+                                    <StackLayout Orientation="Vertical" Padding="10,0">
+                                        <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="Medium" TextColor="White"/>
+                                        <Label Text="{Binding Description}" FontSize="Small" TextColor="WhiteSmoke"/>
+                                    </StackLayout>
+                                    <Image Source="user_icon.png" IsVisible="{Binding IsAchieved}" HeightRequest="25" WidthRequest="25"/>
                                 </StackLayout>
-                                <Image Source="user_icon.png" IsVisible="{Binding IsAchieved}" HeightRequest="25" WidthRequest="25"/>
-                            </StackLayout>
+                            </Border>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

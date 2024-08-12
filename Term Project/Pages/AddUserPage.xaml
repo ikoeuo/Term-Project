@@ -48,7 +48,8 @@
             <Label
                 Text="Fitness Goal: "
                 FontAttributes="Bold"/>
-            <Entry 
+            <Picker
+                ItemsSource="{Binding FitnessGoalList}"
                 x:Name="fitnessGoalEntry"
                 Margin="0,0,0,15"/>
             <Label
