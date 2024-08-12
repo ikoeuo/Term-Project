@@ -1,5 +1,6 @@
 using System.Collections.ObjectModel;
 using Term_Project.BusinessLogic;
+using Term_Project.DataLayer;
 
 namespace Term_Project.Pages;
 
@@ -47,7 +48,8 @@ public partial class AddUserPage : ContentPage
 				Password = passwordEntry.Text
 			};
 			App.UsersList.Add(newUser);
-			App.loggedInUser = newUser;
+            Repository.SaveUserDatatoJsonFile(App.usersFilename, App.UsersList);
+            App.loggedInUser = newUser;
 			Navigation.PushAsync(new MainMenuPage());
 
 		}
