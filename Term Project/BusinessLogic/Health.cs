@@ -8,7 +8,7 @@ namespace Term_Project.BusinessLogic
 {
     public class Health
     {
-        public Health(DateTime date, int calories, int sleep, double waterIntake)
+        public Health(DateTime date, int calories, double sleep, double waterIntake)
         {
             Date = date;
             Calories = calories;
