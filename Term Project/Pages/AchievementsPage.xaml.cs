@@ -15,9 +15,9 @@ public partial class AchievementsPage : ContentPage
     private List<Achievement> GetAchievements(User user)
     {
         var achievements = new List<Achievement>();
-        Achievement stepsAchievement = new Achievement("10k Steps", "Completed 10,000 steps", "user_icon.png", false);
-        Achievement waterAchievement = new Achievement("2L Water", "Drank 2 Litres of water", "user_icon.png", false);
-        Achievement sleepAchievement = new Achievement("8H Sleep", "Slept for 8 hours", "user_icon.png", false);
+        Achievement stepsAchievement = new Achievement("10k Steps", "Completed 10,000 steps", "footsteps.png", false);
+        Achievement waterAchievement = new Achievement("2L Water", "Drank 2 Litres of water", "drop.png", false);
+        Achievement sleepAchievement = new Achievement("8H Sleep", "Slept for 8 hours", "sleep.png", false);
 
         int totalSteps = getTotalSteps(user);
         double toatlWaterIntake = getTotalWaterIntakeForToday(user);
