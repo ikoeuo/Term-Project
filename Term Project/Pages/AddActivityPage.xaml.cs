@@ -1,4 +1,5 @@
 using Term_Project.BusinessLogic;
+using Term_Project.DataLayer;
 
 namespace Term_Project.Pages;
 
@@ -38,6 +39,7 @@ public partial class AddActivityPage : ContentPage
         {
             var newActivity = new Activity(activityDatePicker.Date, activityTypeEntry.Text, int.Parse(durationEntry.Text), float.Parse(distanceEntry.Text), int.Parse(stepsEntry.Text));
             this.user.Activities.Add(newActivity);
+            Repository.SaveUserDatatoJsonFile(App.usersFilename, App.UsersList);
             Navigation.PushAsync(new MainMenuPage());
 
         }
