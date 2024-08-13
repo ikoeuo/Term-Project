@@ -32,7 +32,7 @@ public partial class AddHealthPage : ContentPage
         }
         if (!int.TryParse(caloriesEntry.Text, out _) || !double.TryParse(sleepEntry.Text, out _) || !double.TryParse(waterIntakeEntry.Text, out _))
         {
-            DisplayAlert("Inavalid Selection", "Please enter valid numbers for Calories/Sleep/Water Intake", "OK");
+            DisplayAlert("Invalid Selection", "Please enter valid numbers for Calories/Sleep/Water Intake", "OK");
         }
         else
         {

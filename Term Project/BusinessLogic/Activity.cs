@@ -10,14 +10,6 @@ namespace Term_Project.BusinessLogic
 {
     public class Activity
     {
- 
-        private DateTime _dateTime;
-        private string _activityType;
-        private int _duration;
-        private float _distance;
-        private int _steps;
-
-        // Constructor
         public Activity(DateTime date, string activityType, int duration, float distance, int steps)
         {
             Date = date;

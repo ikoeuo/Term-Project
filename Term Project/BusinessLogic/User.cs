@@ -16,12 +16,12 @@ namespace Term_Project.BusinessLogic
             Health = new List<Health>();
         }
         
-        public User(string name, int age, string gender, float weigth, float height, string fitnessGoal, string username, string password, string userActivity, string userHealth)
+        public User(string name, int age, string gender, float weight, float height, string fitnessGoal, string username, string password, string userActivity, string userHealth)
         {
             Name = name;
             Age = age;
             Gender = gender;
-            Weight = weigth;
+            Weight = weight;
             Height = height;
             FitnessGoal = fitnessGoal;
             Username = username;
