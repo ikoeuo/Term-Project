@@ -40,7 +40,7 @@ namespace Term_Project.BusinessLogic
        
         public override string ToString()
         {
-            return $"Date: {Date.ToShortDateString()}, {ActivityType}, {Duration} mins, {Distance} km, {Steps}";
+            return $"Date: {Date.ToShortDateString()}, {ActivityType}, {Duration} mins, {Distance} km, {Steps} steps";
         }
     }
 }

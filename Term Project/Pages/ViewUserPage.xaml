@@ -7,7 +7,7 @@
     <ScrollView>
         <Border StrokeShape="RoundRectangle 40,40,40,40" Stroke="Transparent" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="810" WidthRequest="600">
             <VerticalStackLayout
-                BackgroundColor="#0e9594">
+                BackgroundColor="#59b5b4">
                 <Image
                      Source="user_icon_border.png"
                      HeightRequest="300"

@@ -26,13 +26,13 @@ VerticalOptions="Center">
         x:Name="caloriesEntry"
         Margin="0,0,0,15"/>
             <Label
-        Text="Sleep: "
+        Text="Sleep(Hrs): "
         FontAttributes="Bold"/>
             <Entry 
         x:Name="sleepEntry"
         Margin="0,0,0,15"/>
             <Label
-        Text="Water Intake: "
+        Text="Water Intake(L): "
         FontAttributes="Bold"/>
             <Entry
         x:Name="waterIntakeEntry"

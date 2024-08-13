@@ -5,27 +5,34 @@
              Title="ViewActivityPage">
     <!-- Author: Hira Ahmad -->
     <ScrollView>
-    <VerticalStackLayout
-VerticalOptions="Center"
-HorizontalOptions="Center">
-        <Image 
-    Source="running_blue.png"
-    WidthRequest="300"
-    HeightRequest="300"
-    Margin="0,0,15,15"/>
-        <ListView
+        <VerticalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            <Image 
+                Source="running_blue.png"
+                WidthRequest="300"
+                HeightRequest="300"
+                Margin="0,0,15,15"/>
+            <Label
+                Text="Past Activity:"
+                FontSize="Large"
+                FontFamily="SFBold"
+                Margin="0,0,0,12"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+            <ListView
             x:Name="ActivityListView"
             />
-        <Button
-        Text="Back"
-        FontFamily="SFBold"
-        WidthRequest="110"
-        HeightRequest="50"
-        Margin="15, 15, 5, 15"
-        CornerRadius="15"
-        Clicked="BackBtnClicked"
-        BackgroundColor="#e75151"/>
-        <!--goes to MainMenuPag-->
+            <Button
+                Text="Back"
+                FontFamily="SFBold"
+                WidthRequest="110"
+                HeightRequest="50"
+                Margin="15, 15, 5, 15"
+                CornerRadius="15"
+                Clicked="BackBtnClicked"
+                BackgroundColor="#e75151"/>
+            <!--goes to MainMenuPag-->
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
