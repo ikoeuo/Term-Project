@@ -38,9 +38,7 @@ namespace Term_Project.BusinessLogic
         public string FitnessGoal {  get; set; }
         public string Username {  get; set; }
         public string Password {  get; set; }
-
         public List<Activity> Activities { get; set; }
-
         public List<Health> Health { get; set; }
     }
 }
