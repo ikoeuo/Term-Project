@@ -26,7 +26,7 @@ HorizontalOptions="Center">
                                         <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="Medium" TextColor="White"/>
                                         <Label Text="{Binding Description}" FontSize="Small" TextColor="WhiteSmoke"/>
                                     </StackLayout>
-                                    <Image Source="user_icon.png" IsVisible="{Binding IsAchieved}" HeightRequest="25" WidthRequest="25"/>
+                                    <Image Source="check.png" IsVisible="{Binding IsAchieved}" HorizontalOptions="End" HeightRequest="30" WidthRequest="30"/>
                                 </StackLayout>
                             </Border>
                         </ViewCell>
