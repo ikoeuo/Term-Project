@@ -26,21 +26,21 @@ public partial class AchievementsPage : ContentPage
         if (totalSteps >= 10000)
         {
             stepsAchievement.IsAchieved = true;
-            DisplayAlert("Congratulations!", "You have achieved your goal for today!", "Ok");
+            DisplayAlert("Congratulations!", "You have achieved your step goal for today!", "Ok");
         }
         achievements.Add(stepsAchievement);
 
         if (toatlWaterIntake >= 2)
         {
             waterAchievement.IsAchieved = true;
-            DisplayAlert("Congratulations!", "You have achieved your goal for today!", "Ok");
+            DisplayAlert("Congratulations!", "You have achieved your water goal for today!", "Ok");
         }
         achievements.Add(waterAchievement);
 
         if (totalSleep >= 8)
         {
             sleepAchievement.IsAchieved = true;
-            DisplayAlert("Congratulations!", "You have achieved your goal for today!", "Ok");
+            DisplayAlert("Congratulations!", "You have achieved your sleep goal for today!", "Ok");
         }
         achievements.Add(sleepAchievement);
 
